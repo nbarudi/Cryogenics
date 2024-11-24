@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cryogenics",
+	"version": "${version}",
+	"name": "Cryogenics",
+	"description": "An all in one Technical Mod based around Ice and Cryogenics!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://bungo.ca/",
+		"sources": "https://github.com/nbarudi/cryogenics"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cryogenics/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ca.bungo.Cryogenics"
+		],
+		"fabric-datagen": [
+			"ca.bungo.CryogenicsDataGenerator"
+		],
+		"client": [
+			"ca.bungo.CryogenicsClient"
+		]
+	},
+	"mixins": [
+		"cryogenics.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

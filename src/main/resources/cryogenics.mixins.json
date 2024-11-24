@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "ca.bungo.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
